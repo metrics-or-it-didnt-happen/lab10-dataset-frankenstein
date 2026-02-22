@@ -1,14 +1,14 @@
-# Lab 10: Dataset Frankenstein — budujemy dane do ML
+# Lab 10: Dataset Frankenstein - budujemy dane do ML
 
 ## Czy wiesz, że...
 
-W 2001 roku Tim Menzies opublikował jeden z pierwszych publicznie dostępnych datasetów do predykcji defektów (NASA MDP). Od tamtego czasu badacze odkryli, że dane były pełne błędów — duplikaty, brakujące wartości, niespójne etykiety. Okazuje się, że budowanie dobrego datasetu to najtrudniejsza część machine learningu. Kto by pomyślał.
+W 2001 roku Tim Menzies opublikował jeden z pierwszych publicznie dostępnych datasetów do predykcji defektów (NASA MDP). Od tamtego czasu badacze odkryli, że dane były pełne błędów - duplikaty, brakujące wartości, niespójne etykiety. Okazuje się, że budowanie dobrego datasetu to najtrudniejsza część machine learningu. Kto by pomyślał.
 
 ## Kontekst
 
 Przez ostatnie laby zbieraliście metryki kodu na różne sposoby: LOC, złożoność cyklomatyczną, metryki OO, code churn, ownership. Na labach 8-9 zobaczyliście jak platforma (SonarQube) robi to automatycznie. Teraz czas na pytanie: **czy te metryki mogą predykować bugi?**
 
-Żeby odpowiedzieć, potrzebujemy datasetu — tabeli, gdzie każdy wiersz to plik, kolumny to metryki, a ostatnia kolumna mówi czy plik jest "buggy" czy "clean". Dziś taki dataset zbudujemy od zera, łącząc dane z poprzednich labów.
+Żeby odpowiedzieć, potrzebujemy datasetu - tabeli, gdzie każdy wiersz to plik, kolumny to metryki, a ostatnia kolumna mówi czy plik jest "buggy" czy "clean". Dziś taki dataset zbudujemy od zera, łącząc dane z poprzednich labów.
 
 ## Cel laboratorium
 
@@ -107,12 +107,12 @@ To uproszczona heurystyka (w badaniach naukowych używa się bardziej zaawansowa
 4. Czy widzicie korelacje między cechami? Które cechy są ze sobą skorelowane?
 5. Czy heurystyka etykietowania jest idealna? Jakie są jej wady?
 
-### Zadanie 3: Feature engineering (30 min) — dla ambitnych
+### Zadanie 3: Feature engineering (30 min) - dla ambitnych
 
 Rozszerzcie dataset o dodatkowe cechy:
 
 1. **Metryki OO** (z lab06): WMC, DIT, CBO dla plików z klasami
-2. **Code ownership** (z lab07): owner_pct — jaki % commitów ma główny owner
+2. **Code ownership** (z lab07): owner_pct - jaki % commitów ma główny owner
 3. **Wiek ostatniej modyfikacji**: dni od ostatniego commitu dotykającego pliku
 4. **Stosunek komentarzy**: % linii będących komentarzami
 
@@ -122,8 +122,8 @@ Sprawdźcie czy nowe cechy poprawiają separację buggy/clean na boxplotach.
 
 W swoim branchu `lab10_nazwisko1_nazwisko2`:
 
-1. **`dataset_builder.ipynb`** — wypełniony notebook z kodem i odpowiedziami
-2. **`dataset.csv`** — wygenerowany dataset
+1. **`dataset_builder.ipynb`** - wypełniony notebook z kodem i odpowiedziami
+2. **`dataset.csv`** - wygenerowany dataset
 3. *(opcjonalnie)* rozszerzony dataset z dodatkowymi cechami
 
 ## Kryteria oceny
@@ -160,4 +160,4 @@ O: `git log --format="%ad" --date=short --diff-filter=A -- sciezka/do/pliku.py` 
 - [The Art and Science of Analyzing Software Data (book)](https://www.elsevier.com/books/the-art-and-science-of-analyzing-software-data/bird/978-0-12-411519-4)
 
 ---
-*"Zbieramy części z różnych miejsc i ożywiamy potwora... to znaczy dataset. Najgorsza część? Potwór żyje, ale ma brakujące wartości."* — dr Frankenstein (wersja data science)
+*"Zbieramy części z różnych miejsc i ożywiamy potwora... to znaczy dataset. Najgorsza część? Potwór żyje, ale ma brakujące wartości."* - dr Frankenstein (wersja data science)
